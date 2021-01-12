@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.con-tendina').click(function(){
+  $('.con-tendina').hover(function(){
     $(this).children('.tendina').toggleClass('active');
   });
 

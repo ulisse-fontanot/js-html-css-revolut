@@ -13,7 +13,6 @@ ul{
   font-size: 22px;
   text-align: center;
   color: grey;
-  margin: auto;
 }
 
 header{
@@ -27,18 +26,16 @@ header{
 header > div{
   width: 10%;
   height: 100%;
-  border: 1px solid black;
   line-height: 100px;
   position: relative;
 }
 
 .tendina{
   display: none;
-  width: 120%;
   position: absolute;
-  left: -10%;
+  transform: rotateX(-50%);
   padding: 10px 30px;
-  border: 1px solid black;
+  box-shadow: 0 5px 10px blue;
 }
 
 .tendina.active{
@@ -66,10 +63,26 @@ header div:hover p{
   width: 100%;
 }
 
+.fa-chevron-up{
+  display: none;
+}
+
+.con-tendina:hover .fa-chevron-down{
+  display: none;
+}
+
+.con-tendina:hover .fa-chevron-up{
+  display: inline-block;
+}
+
+.app{
+  text-align: center;
+}
+
 .app a{
   font-size: 22px;
   color: white;
-  background-color: rgb(230, 65, 213);
+  background-color: rgb(65, 92, 230);
   border-radius: 20px;
   padding: 10px;
 }
