@@ -1,0 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  font-size: 22px;
+  text-align: center;
+  color: grey;
+  margin: auto;
+}
+
+header{
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  height: 100px;
+  display: flex;
+}
+
+header > div{
+  width: 10%;
+  height: 100%;
+  border: 1px solid black;
+  line-height: 100px;
+  position: relative;
+}
+
+.tendina{
+  display: none;
+  width: 120%;
+  position: absolute;
+  left: -10%;
+  padding: 10px 30px;
+  border: 1px solid black;
+}
+
+.tendina.active{
+  display: flex;
+}
+
+header div p{
+  font-size: 22px;
+  text-align: center;
+  color: grey;
+}
+
+header div:hover p{
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.app a{
+  font-size: 22px;
+  color: white;
+  background-color: rgb(230, 65, 213);
+  border-radius: 20px;
+  padding: 10px;
+}
